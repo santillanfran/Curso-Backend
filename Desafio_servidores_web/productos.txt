@@ -1,0 +1,26 @@
+[
+  {
+    "title": 'Pelota de Futbol',
+    "price": 2.000,
+    "thumbnail": 'https://ar.pinterest.com/pin/601863937692344623/',
+    "id": 1
+  },
+  {
+    "title": 'Pelota de Basquet',
+    "price": 1.500,
+    "thumbnail": 'https://ar.pinterest.com/pin/601582462741335411/',
+    "id": 2
+  },
+  {
+    "title": 'Pelota de Tenis',
+    "price": 880,
+    "thumbnail": 'https://ar.pinterest.com/pin/433682639129056922/',
+    "id": 3
+  },
+  {
+    "title": 'Pelota de Rugby',
+    "price":  1.950,
+    "thumbnail": 'https://ar.pinterest.com/pin/597149231824217461/',
+    "id": 4
+  }
+]
