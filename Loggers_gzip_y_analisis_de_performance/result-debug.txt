@@ -1,0 +1,91 @@
+﻿Statistical profiling result from debug-v8.log, (1911 ticks, 0 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+   1888   98.8%          C:\WINDOWS\SYSTEM32\ntdll.dll
+     23    1.2%          C:\Program Files\nodejs\node.exe
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+
+ [C++]:
+   ticks  total  nonlib   name
+
+ [Summary]:
+   ticks  total  nonlib   name
+      0    0.0%    NaN%  JavaScript
+      0    0.0%    NaN%  C++
+      3    0.2%  Infinity%  GC
+   1911  100.0%          Shared libraries
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   1888   98.8%  C:\WINDOWS\SYSTEM32\ntdll.dll
+
+     23    1.2%  C:\Program Files\nodejs\node.exe
+     20   87.0%    C:\Program Files\nodejs\node.exe
+      5   25.0%      Function: ^compileFunction node:vm:308:25
+      4   80.0%        Function: ^wrapSafe node:internal/modules/cjs/loader:1011:18
+      4  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      3   75.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1   25.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1   20.0%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1011:18
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      4   20.0%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3   75.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1   33.3%          LazyCompile: ~lazyWebCrypto node:crypto:127:23
+      1  100.0%            LazyCompile: ~get node:crypto:292:8
+      1   33.3%          LazyCompile: ~get BlockList node:net:1775:16
+      1  100.0%            C:\Program Files\nodejs\node.exe
+      1   33.3%          Function: ~<anonymous> node:_http_common:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1   25.0%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      1  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      2   10.0%      LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2  100.0%        LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1   50.0%          Function: ~<anonymous> node:internal/webstreams/adapters:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1   50.0%          Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    5.0%      LazyCompile: ~statSync node:fs:1530:18
+      1  100.0%        LazyCompile: ~tryStatSync node:internal/modules/esm/resolve:160:3
+      1  100.0%          LazyCompile: ~finalizeResolution node:internal/modules/esm/resolve:367:28
+      1  100.0%            LazyCompile: ~moduleResolve node:internal/modules/esm/resolve:926:23
+      1    5.0%      LazyCompile: ~route D:\Escritorio\desafio-14-Loggers-gzip-analisis-performance\node_modules\express\lib\router\index.js:502:29
+      1  100.0%        LazyCompile: ~proto.<computed> D:\Escritorio\desafio-14-Loggers-gzip-analisis-performance\node_modules\express\lib\router\index.js:519:27
+      1  100.0%          Script: ~<anonymous> file:///D:/Escritorio/desafio-14-Loggers-gzip-analisis-performance/src/routes/apiArtilleryRoutes.js:1:1
+      1  100.0%            C:\Program Files\nodejs\node.exe
+      1    5.0%      LazyCompile: ~initializeCJSLoader node:internal/bootstrap/pre_execution:412:29
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    5.0%      LazyCompile: ~compileFunction node:vm:308:25
+      1  100.0%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1011:18
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1    5.0%      LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:146:60
+      1  100.0%        C:\Program Files\nodejs\node.exe
+      1    5.0%      LazyCompile: ~IPv6 D:\Escritorio\desafio-14-Loggers-gzip-analisis-performance\node_modules\ipaddr.js\lib\ipaddr.js:200:18
+      1  100.0%        Function: ~<anonymous> D:\Escritorio\desafio-14-Loggers-gzip-analisis-performance\node_modules\ipaddr.js\lib\ipaddr.js:199:26
+      1  100.0%          Function: ~<anonymous> D:\Escritorio\desafio-14-Loggers-gzip-analisis-performance\node_modules\ipaddr.js\lib\ipaddr.js:1:10
+      1  100.0%            Function: ~<anonymous> D:\Escritorio\desafio-14-Loggers-gzip-analisis-performance\node_modules\ipaddr.js\lib\ipaddr.js:1:1
+      1    5.0%      LazyCompile: ~<anonymous> node:internal/url:696:12
+      1  100.0%        LazyCompile: ~toString node:internal/url:744:11
+      1  100.0%          Function: ^URL node:internal/url:634:14
+      1  100.0%            LazyCompile: ~defaultGetFormatWithoutErrors node:internal/modules/esm/get_format:92:39
+      1    5.0%      Function: ~<anonymous> node:child_process:1:1
+      1  100.0%        Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1  100.0%            Function: ~<anonymous> node:internal/cluster/primary:1:1
+      1    5.0%      Function: ~<anonymous> D:\Escritorio\desafio-14-Loggers-gzip-analisis-performance\node_modules\debug\src\node.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:963:33
